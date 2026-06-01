@@ -1,0 +1,25 @@
+# ─── Key Scanner + Verifier Configuration ────────────────────────────────────
+
+# GitHub Personal Access Token(s) — comma-separated for rotation (5k/hr per token)
+# Multiple tokens = more rate limit! Example: "ghp_xxx,ghp_yyy,ghp_zzz"
+"github_token" = "ghp_YOUR_TOKEN_HERE"
+
+# Discord Webhook URL — only VERIFIED keys are sent here, no delay (leave empty to disable)
+"discord_webhook" = ""
+
+# Enable provider API verification (true = verify keys, false = regex-only)
+"enable_verify" = true
+
+# Number of verification workers (default: 20)
+"verify_workers" = 20
+
+# Verification HTTP timeout in seconds (default: 15)
+"verify_timeout" = 15
+
+# ─── Custom Signatures (optional) ────────────────────────────────────────────
+# If you define any signatures here, the built-in defaults are REPLACED.
+# Leave this section empty/commented out to use the built-in rules.
+#
+# [signatures]
+# "OpenAI API Key" = 'sk-[A-Za-z0-9_-]{20,}'
+# "Anthropic API Key" = 'sk-ant-[A-Za-z0-9\-_]{20,}'

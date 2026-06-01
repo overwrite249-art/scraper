@@ -1,0 +1,6 @@
+config.toml
+scanner
+scanner.exe
+scraper
+scanner-windows.exe
+*.log
